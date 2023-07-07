@@ -1,0 +1,22 @@
+<h2>{{ headerName | uppercase}}</h2>
+<h3>My monthly salary is {{ salary | currency:'USD'}}</h3>
+<br>
+
+<!-- <button (click)="functionClick()" >Click Me</button> -->
+<input value="isDisabled" [disabled]="isDisabled" (change)="functionClick()">
+<br>
+<br>
+<h1 [style.color]="colorName" [style.font-size]="fontSize"> style binding</h1>
+
+<br>
+<input [(ngModel)]="headerName">
+<h4 [ngClass]="className"> this is class directive</h4>
+
+<h1 [ngStyle]="styleValue"> this is style directive</h1>
+<h2 *ngIf="show"> it works</h2>
+<ul>
+    <li *ngFor="let item of colors">{{item}}</li>
+</ul>
+
+
+
